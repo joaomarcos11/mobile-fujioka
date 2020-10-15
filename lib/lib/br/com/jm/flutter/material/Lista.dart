@@ -11,6 +11,13 @@ class Lista extends StatelessWidget {
               leading: Icon(Icons.fastfood),
               title: Text('Combo Rango Master - R\$ 30,00'),
               subtitle: Text('Hamburguer 240g + Batata à moda da casa + Suco'),
+              trailing: RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'itemUm');
+                },
+                color: Colors.green,
+                child: const Text('Veja mais!'),
+              ),
             ),
           ),
           Card(
@@ -18,6 +25,13 @@ class Lista extends StatelessWidget {
               leading: Icon(Icons.fastfood),
               title: Text('Combo Rango Fit - R\$ 28,00'),
               subtitle: Text('Frango frito 240g + Purê de batata-doce + Suco'),
+              trailing: RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'itemDois');
+                },
+                color: Colors.green,
+                child: const Text('Veja mais!'),
+              ),
             ),
           ),
           Card(
@@ -25,6 +39,13 @@ class Lista extends StatelessWidget {
               leading: Icon(Icons.fastfood),
               title: Text('Salgadozada - R\$ 6,00'),
               subtitle: Text('Salgados variados'),
+              trailing: RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'itemTres');
+                },
+                color: Colors.green,
+                child: const Text('Veja mais!'),
+              ),
             ),
           ),
         ],

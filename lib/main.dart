@@ -1,8 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:appList/lib/br/com/jm/flutter/material/Lista.dart';
+import 'package:appList/lib/br/com/jm/flutter/material/item_um.dart';
+import 'package:appList/lib/br/com/jm/flutter/material/item_dois.dart';
+import 'package:appList/lib/br/com/jm/flutter/material/item_tres.dart';
+
+// void main() {
+//   runApp(MaterialApp(home: Lista()));
+// }
 
 void main() {
-  runApp(MaterialApp(home: Lista()));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: 'lista',
+        routes: {
+          'lista': (context) => Lista(),
+          'itemUm': (context) => ItemUm(),
+          'itemDois': (context) => ItemDois(),
+          'itemTres': (context) => ItemTres(),
+        });
+  }
 }
 
 // class MyApp extends StatelessWidget {
